@@ -1,0 +1,99 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #C6F531; /* neon green */
+  color: #000;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+nav h2 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.part2 {
+  display: flex;
+  gap: 40px;
+}
+
+.part2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* HERO SECTION */
+section {
+  padding: 80px 60px;
+}
+
+/* BIG TEXT */
+.herotext1 h1 {
+  font-size: 140px;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+/* IDEAS TEXT */
+.herotext2 h2 {
+  font-size: 140px;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+/* LAYOUT ALIGNMENT */
+.herotext1 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* VIDEO PILL */
+.Video {
+  width: 260px;
+  height: 90px;
+  background: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=600') center/cover;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* PLAY BUTTON */
+.Video::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 50%;
+}
+
+/* PLAY TRIANGLE */
+.Video::after {
+  content: '';
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 18px solid #C6F531;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
