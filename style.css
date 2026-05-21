@@ -13,21 +13,25 @@ body {
 
 /* NAVBAR */
 nav {
+  padding: 60px 100px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  
 }
 
 nav h2 {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.part2 {
+nav .part2 {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
 }
 
 .part2 a {
@@ -40,6 +44,7 @@ nav h2 {
 /* HERO SECTION */
 section {
   padding: 80px 60px;
+  background-color: aliceblue;
 }
 
 /* BIG TEXT */
@@ -72,6 +77,18 @@ section {
   position: relative;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
+/* DESCRIPTION TEXT */
+
+.description{
+  width: 520px;
+  margin-left: auto;
+  margin-top: -20px;
+
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
 
 /* PLAY BUTTON */
 .Video::before {
